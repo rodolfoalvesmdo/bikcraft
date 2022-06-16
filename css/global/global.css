@@ -1,0 +1,51 @@
+:root {
+  --w: #FFFFFF;
+  --c1: #F7F7F7;
+  --c2: #EDEDED;
+  --c3: #E4E4E4;
+  --c5: #b2b2b2;
+  --c6: #9C9C9C;
+  --c7: #717171;
+  --c8: #595959;
+  --c9: #404040;
+  --c10: #2E2E2E;
+  --c11: #111111;
+  --c12: #000000;
+  --p1: #FFBB00;
+  --p2: #E4A30B;
+  --p3: #A66F00;
+  --p4: #664400;
+  --p5: #332200;
+  --primary-font: 'Poppins', Arial, sans-serif;
+  --secondary-font: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--secondary-font);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--primary-font);
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
