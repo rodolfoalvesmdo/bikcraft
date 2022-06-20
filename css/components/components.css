@@ -1,0 +1,48 @@
+/* Button */
+.btn {
+  background: linear-gradient(#FFBF00, #F2A50C);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--p5);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: linear-gradient(#FFB60D, #e59317);
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+/* Large Title */
+.large-title {
+  font-size: 4rem;
+  line-height: 1.125;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .large-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .large-title {
+    font-size: 2.5rem;
+  }
+}

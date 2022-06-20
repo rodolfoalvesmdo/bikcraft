@@ -1,6 +1,5 @@
 .header-bg {
   background-color: var(--c12);
-  padding: 32px 20px;
 }
 
 .header {
@@ -9,6 +8,8 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {
@@ -41,18 +42,28 @@
 }
 
 @media (max-width: 800px) {
+  .header-bg {
+    border-bottom: solid 1px var(--c11);
+  }
+
   .header-menu {
     gap: 20px;
   }
-
+  
   .menu-item {
-    background-color: var(--c11);
     border-radius: 4px;
-    padding: 12px 16px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    color: var(--c5);
+  }
+
+  .logo img {
+    width: 65%;
+    margin: 0 auto;
   }
 
   .menu-item:hover {
-    background-color: var(--c10);
+    color: var(--p1);
   }
 
   .menu-item::after {
@@ -63,11 +74,11 @@
 @media (max-width: 600px) {
   .header-menu {
     gap: 12px;
+    justify-content: center;
   }
 
-  .menu-item {
-    padding: 8px 12px;
-    font-size: 0.875rem;
+  .menu-item:hover {
+    color: var(--c5);
   }
 }
 
