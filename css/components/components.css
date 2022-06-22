@@ -1,3 +1,12 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Button */
 .btn {
   background: linear-gradient(#FFBF00, #F2A50C);
