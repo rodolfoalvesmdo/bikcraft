@@ -1,14 +1,10 @@
 .bike-list {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
-.bike-list-title {
+.bike-list h2 {
   margin-bottom: 20px;
-}
-
-.bike-list-title span {
-  color: var(--p1);
 }
 
 .bike-list-wrapper {
@@ -33,10 +29,6 @@
 }
 
 .bike-item h3 {
-  font-weight: 600;
-  color: var(--c11);
-  font-size: 2rem;
-  line-height: 1.25;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -58,17 +50,11 @@
 
 .bike-item p {
   margin-left: 20px;
-  font-size: 1.125rem;
-  color: var(--c8);
 }
 
 @media (max-width: 800px) {
   .bike-list-wrapper {
     gap: 20px;
-  }
-
-  .bike-item h3 {
-    font-size: 1.5rem;
   }
 }
 

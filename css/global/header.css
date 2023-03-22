@@ -22,8 +22,6 @@
   padding: 16px 0;
   display: inline-block;
   color: var(--w);
-  font-family: var(--primary-font);
-  font-size: 1.125rem;
   position: relative;
 }
 
@@ -53,7 +51,6 @@
   .menu-item {
     border-radius: 4px;
     padding: 8px 12px;
-    font-size: 0.875rem;
     color: var(--c5);
   }
 

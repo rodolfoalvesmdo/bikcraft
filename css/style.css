@@ -1,5 +1,8 @@
 @import "./global/global.css";
+@import "./utilities/typography.css";
+@import "./utilities/colors.css";
 @import "./global/header.css";
-@import "./components/components.css";
+@import "./utilities/components.css";
 @import "./home/hero.css";
 @import "./home/bike-list.css";
+@import "./home/technology.css";

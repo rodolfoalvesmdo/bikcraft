@@ -37,21 +37,3 @@
   }
 }
 
-/* Large Title */
-.large-title {
-  font-size: 4rem;
-  line-height: 1.125;
-  font-weight: 600;
-}
-
-@media (max-width: 1200px) {
-  .large-title {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .large-title {
-    font-size: 2.5rem;
-  }
-}
