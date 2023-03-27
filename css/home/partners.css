@@ -21,9 +21,7 @@
   justify-items: center;
 }
 
-.partners ul li:nth-child(even) {
-  border-right: none;
-}
+
 
 .partners ul li:nth-child(-n + 4) {
   border-bottom: 2px solid var(--c2);
@@ -35,14 +33,13 @@
     padding: 0 20px;
   }
 
+  .partners ul li:nth-child(even) {
+    border-right: none;
+  }
+
   .partners ul li:nth-child(5),
   .partners ul li:nth-child(6) {
     border-bottom: 2px solid var(--c2);
-  }
-
-  .partners ul li:nth-child(2),
-  .partners ul li:nth-child(6) {
-    border-right: none;
   }
 
 }
