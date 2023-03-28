@@ -21,6 +21,15 @@
   text-transform: uppercase;
 }
 
+.btn.secondary {
+  background: var(--c10);
+  color: var(--c4);
+}
+
+.btn.secondary:hover {
+  background: var(--c9);
+}
+
 .btn:hover {
   background: linear-gradient(#FFB60D, #e59317);
 }

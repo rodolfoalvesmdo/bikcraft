@@ -1,0 +1,114 @@
+.insurance-bg {
+  background-color: var(--c11);
+  padding: 120px 0;
+}
+
+.insurance {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.insurance h2 {
+  margin-bottom: 20px;
+  grid-column: 1 / -1;
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+  background-color: var(--c12);
+  border-radius: 4px;
+  padding: 32px 64px;
+}
+
+.plan h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  margin-bottom: 32px;
+  grid-column: -1 / 1;
+}
+
+.plan ul li {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.plan ul li + li {
+  margin-top: 20px;
+}
+
+.plan ul li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -20px;
+}
+
+.plan span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.plan .btn {
+  place-self: start;
+}
+
+.insurance div:first-of-type {
+  box-shadow: inset 0 44px var(--c11), inset 0 -44px var(--c11);
+}
+
+@media (max-width: 1200px) {
+  .insurance-bg {
+    padding: 100px 0;
+  }
+
+  .insurance h2 {
+    margin-bottom: 0;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .insurance {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance div:first-of-type {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .insurance-bg {
+    padding: 80px 0;
+  }
+  
+  .plan {
+    padding: 32px 50px;
+  }
+
+  .plan h3 {
+    margin-bottom: 15px;
+  }
+
+  .plan ul {
+    margin: 32px 0;
+  }
+
+  .plan .btn {
+    grid-column: -1 / 1;
+    place-self: unset;
+    text-align: center;
+  }
+}
