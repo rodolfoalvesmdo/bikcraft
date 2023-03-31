@@ -46,3 +46,23 @@
   }
 }
 
+/* Títulos Internos */
+.title-bg {
+  background-color: var(--c11);
+  padding: 60px 0;
+}
+
+.title p {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding: 40px 0;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+}

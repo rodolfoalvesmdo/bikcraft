@@ -1,0 +1,38 @@
+.terms {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.terms h3 {
+  margin-bottom: 20px;
+}
+
+.terms ul {
+  max-width: 760px;
+}
+
+.terms li + li {
+  margin-top: 20px;
+}
+
+.terms li {
+  font-weight: 400;
+}
+
+.terms div + div {
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .terms {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .terms {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
