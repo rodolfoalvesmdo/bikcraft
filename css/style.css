@@ -15,3 +15,6 @@
 
 /* Terms of Use */
 @import "./terms/terms.css";
+
+/* Bikes */
+@import "./bikes/bikes.css";
