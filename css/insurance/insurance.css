@@ -1,0 +1,106 @@
+#insurance .insurance-bg {
+  padding: 60px 0;
+}
+
+.benefits-bg {
+  background-color: var(--c12);
+}
+
+.benefits,
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits h2,
+.faq h2 {
+  margin-bottom: 90px;
+}
+
+.benefits ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 80px;
+}
+
+.benefits li img,
+.benefits li h3 {
+  margin-bottom: 8px;
+}
+
+.benefits li p {
+  font-weight: 400;
+}
+
+.faq li {
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+.faq li:nth-child(odd) {
+  background-color: var(--c1);
+}
+
+.faq li h3 {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.faq li h3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+  left: -20px;
+  top: 11px;
+}
+
+.faq li h3 img {
+  object-fit: contain;
+  transition: 0.2s;
+}
+
+.faq li h3 a:hover img {
+  transform: rotate(180deg);
+}
+
+.faq li h3 a {
+  padding: 6px 0 6px 8px;
+}
+
+.faq li p {
+  max-width: 75ch;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .benefits ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits h2,
+  .faq h2 {
+    margin-bottom: 60px;
+  }
+
+  .benefits,
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits ul {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits li p,
+  .faq li p {
+    font-size: 1rem;
+  }
+}
