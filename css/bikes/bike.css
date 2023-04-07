@@ -1,0 +1,248 @@
+.bike {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 60px;
+  margin-top: 60px;
+  align-items: start;
+}
+
+.bike-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bike-images img {
+  flex: 1;
+  min-width: 150px;
+}
+
+.bike-images img:first-child {
+  min-width: 100%;
+}
+
+.bike-cta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 32px 12px;
+  margin-bottom: 40px;
+}
+
+.bike-cta p {
+  grid-column: -1 / 1;
+}
+
+.bike-cta .span-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-between;
+}
+
+.bike-cta span {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: max-content;
+  padding: 4px 8px;
+  background-color: var(--c12);
+  border-radius: 4px;
+}
+
+.bike-cta span img {
+  margin-right: 8px;
+}
+
+.bike-info {
+  margin-bottom: 40px;
+}
+
+.bike-info span,
+.bike-specs span {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+  letter-spacing: 0.015em;
+}
+
+.bike-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 36px;
+  background-color: var(--c12);
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.bike-info li p {
+  max-width: 30ch;
+  margin-top: 8px;
+  font-size: 0.875rem;
+}
+
+.bike-specs {
+  margin-bottom: 40px;
+}
+
+.bike-specs ul {
+  padding: 32px;
+  background-color: var(--c12);
+  border-radius: 4px;
+}
+
+.bike-specs li {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.bike-specs li:nth-child(-n + 5) {
+  border-bottom: 1px solid var(--c11);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+#bike .bike-list h2 {
+  margin-bottom: 40px;
+}
+
+#bike .bike-list-wrapper {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#bike .bike-list-wrapper img {
+  width: 100%;
+}
+
+.insurance-cta-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0 120px var(--w), inset 0 -120px var(--c12);
+}
+
+.insurance-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.insurance-cta > div {
+  padding: 180px 0;
+}
+
+.insurance-cta h2 {
+  margin-bottom: 32px;
+}
+
+.insurance-cta p {
+  margin-bottom: 20px;
+}
+
+.insurance-cta img {
+  object-fit: cover;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  #bike .title-bg {
+    padding: 60px 0;
+  }
+
+  .bike {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .bike-cta {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .bike-cta p {
+    max-width: 40ch;
+    grid-column: 1;
+  }
+
+  .bike-cta a {
+    place-self: start;
+  }
+
+  .bike-cta .span-grid {
+    grid-column: 2;
+    gap: 10px;
+  }
+
+  .bike-info ul {
+    text-align: center;
+  }
+
+  .bike-info li img {
+    margin: 0 auto;
+  }
+
+  .bike-info li p {
+    margin: 8px auto 0 auto;
+  }
+
+  .insurance-cta-bg {
+    box-shadow: inset 0 60px var(--w), inset 0 -60px var(--c12);
+  }
+}
+
+@media (max-width: 600px) {
+  #bike .title-bg {
+    padding: 40px 0;
+  }
+
+  .bike {
+    padding-bottom: 0;
+    gap: 16px;
+  }
+
+  .bike-cta {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+
+  .bike-cta p {
+    margin-bottom: 20px;
+  }
+
+  .bike-cta a {
+    place-self: unset;
+    text-align: center;
+  }
+
+  .bike-cta .span-grid {
+    grid-column: unset;
+  }
+
+  .bike-info ul {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-specs li {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+
+  .insurance-cta-bg {
+    box-shadow: inset 0 -60px var(--c12);
+  }
+
+  .insurance-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-cta > div {
+    padding: 80px 0 0 0;
+  }
+
+  .insurance-cta img {
+    grid-row: 2;
+    height: 300px;
+    width: 100%;
+  }
+}
