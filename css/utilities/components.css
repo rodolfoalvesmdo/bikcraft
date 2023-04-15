@@ -19,6 +19,7 @@
   font-weight: 600;
   color: var(--p5);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn.secondary {

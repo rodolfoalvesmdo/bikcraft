@@ -4,6 +4,7 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 @import "./utilities/components.css";
+@import "./utilities/form.css";
 
 /* Home */
 @import "./home/hero.css";
@@ -24,3 +25,7 @@
 
 /* Bike */
 @import "./bikes/bike.css";
+
+/* Contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
