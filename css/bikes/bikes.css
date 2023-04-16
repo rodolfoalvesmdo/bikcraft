@@ -115,6 +115,12 @@
   }
 }
 
+@media (min-width: 800px) {
+  .bikes {
+    background: url("../../img/dec/top-right.svg") no-repeat top right;
+  }
+}
+
 @media (max-width: 600px) {
   .bikes-wrapper {
     padding: 20px 0;

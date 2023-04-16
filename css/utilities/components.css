@@ -58,6 +58,12 @@
   margin-bottom: 4px;
 }
 
+@media (min-width: 800px) {
+  .title {
+    background: url("../../img/dec/bottom-right.svg") no-repeat top right;
+  }
+}
+
 @media (max-width: 800px) {
   .title-bg {
     padding: 40px 0;

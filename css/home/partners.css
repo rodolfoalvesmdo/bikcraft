@@ -21,8 +21,6 @@
   justify-items: center;
 }
 
-
-
 .partners ul li:nth-child(-n + 4) {
   border-bottom: 2px solid var(--c2);
 }
@@ -42,6 +40,12 @@
     border-bottom: 2px solid var(--c2);
   }
 
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .partners {
+    padding: 80px 0;
+  }
 }
 
 @media (max-width: 600px) {

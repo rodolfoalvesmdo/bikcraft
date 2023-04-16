@@ -52,6 +52,12 @@
   margin-left: 20px;
 }
 
+@media (min-width: 801px) and (max-width: 1000px) {
+  .bike-list {
+    padding-top: 60px;
+  }
+}
+
 @media (max-width: 800px) {
   .bike-list-wrapper {
     gap: 20px;

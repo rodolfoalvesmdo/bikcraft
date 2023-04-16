@@ -18,7 +18,7 @@
 }
 
 .contact-content {
-  background-color: var(--c12);
+  background: var(--c12) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 40px;
   padding: 60px 60px 130px;
   border-radius: 4px 0 0 4px;
 }
@@ -70,6 +70,10 @@
   padding-left: 28px;
 }
 
+@media (min-width: 800px) {
+ 
+}
+
 @media (max-width: 600px) {
   .contact-wrapper {
     grid-template-columns: 1fr;
@@ -83,6 +87,7 @@
     order: 2;
     border-radius: 0 0 4px 4px;
     padding: 60px 60px 100px;
+    background: var(--c12) url("../../img/dec/bottom-right.svg") no-repeat bottom 40px right 40px;
   }
 
   .contact-wrapper .social {
