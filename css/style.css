@@ -26,6 +26,9 @@
 /* Bike */
 @import "./bikes/bike.css";
 
-/* Contato */
-@import "./contato/contato.css";
-@import "./contato/lojas.css";
+/* Contact */
+@import "./contact/contact.css";
+@import "./contact/stores.css";
+
+/* Proposal */
+@import "./proposal/proposal.css";

@@ -4,7 +4,6 @@
   gap: 20px;
   padding: 60px;
   background-color: var(--w);
-  border-radius: 0 4px 4px 0;
 }
 
 .form label {
@@ -22,7 +21,8 @@
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="tel"],
-.form textarea {
+.form textarea,
+.form select {
   width: 100%;
   background-color: var(--c1);
   border: none;

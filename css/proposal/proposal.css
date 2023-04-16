@@ -1,0 +1,209 @@
+#proposal {
+  background: linear-gradient(var(--c11) 600px, var(--c1) 0px);
+}
+
+.proposal {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.proposal h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.proposal h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+  left: -12px;
+}
+
+.proposal-product,
+.proposal-data {
+  padding: 60px 48px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.proposal-product {
+  background-color: var(--c12);
+  border-radius: 4px 0 0 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: start;
+}
+
+.proposal-data {
+  border-radius: 0 4px 4px 0;
+}
+
+.proposal-product label {
+  font: 400 1rem/1.5 var(--primary-font);
+  color: var(--c4);
+  background-color: var(--c10);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.proposal-product input:checked + label {
+  background-color: var(--w);
+  color: var(--c11);
+}
+
+.proposal-product label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--c6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.proposal-product input:checked + label::before {
+  border-color: var(--c7);
+  background-color: var(--c7);
+  box-shadow: inset 0px 0px 0px 3px var(--w);
+}
+
+.proposal-product label:hover {
+  background-color: var(--c9);
+}
+
+.proposal-product label span {
+  display: none;
+}
+
+.proposal-product input:checked + label span {
+  display: inline-block;
+}
+
+.proposal-product input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.proposal-product > * {
+  grid-column: -1 / 1;
+}
+
+.proposal-product > label {
+  grid-column: initial;
+}
+
+.proposal-content {
+  display: none;
+}
+
+.proposal-content h2,
+.proposal-data h2:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
+#bike:checked ~ #proposal-bike,
+#insurance:checked ~ #proposal-insurance {
+  display: grid;
+  gap: 20px;
+}
+
+.proposal-details {
+  display: none;
+  background-color: var(--w);
+  padding: 16px 16px 20px 36px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0 0 4px 4px;
+  align-items: center;
+  margin-top: -24px;
+}
+
+.proposal-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.proposal-details li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.proposal-product input:checked + label + .proposal-details {
+  display: grid;
+}
+
+.proposal-data div:last-of-type {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.proposal-data div:last-of-type label {
+  margin-bottom: 0;
+}
+
+.proposal-data div:last-of-type label a {
+  color: var(--c11);
+  text-decoration: underline;
+}
+
+.proposal-data input[type="checkbox"] {
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  background-color: var(--c1);
+  border: 1px solid var(--c4);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.proposal-data input[type="checkbox"]:checked {
+  border-color: var(--c4);
+  background-color: var(--c4);
+  box-shadow: inset 0px 0px 0px 9px var(--w);
+}
+
+@media (max-width: 1200px) {
+  .proposal-product,
+  .proposal-data {
+    padding: 48px 32px;
+  }
+
+  .proposal-details {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .proposal {
+    grid-template-columns: 1fr;
+  }
+
+  .proposal-product {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .proposal-data {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .proposal-data div:last-of-type label {
+    font-size: 0.875rem;
+  }
+}
