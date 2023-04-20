@@ -25,14 +25,15 @@
   border-bottom: 2px solid var(--c2);
 }
 
+.partners ul li:nth-child(4),
+.partners ul li:nth-child(8) {
+  border-right: none;
+}
+
 @media (max-width: 1200px) {
   .partners ul {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 20px;
-  }
-
-  .partners ul li:nth-child(even) {
-    border-right: none;
   }
 
   .partners ul li:nth-child(5),
