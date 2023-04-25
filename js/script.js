@@ -35,10 +35,10 @@ function clickEvent(image) {
 images.forEach(clickEvent);
 
 
-/******* Auto Set Proposal Items *******/
+/******* Auto Select Proposal Items *******/
 const urlParams = new URLSearchParams(location.search);
 
-function setProposalItems(param) {
+function selectProposalItems(param) {
   const proposalItem = document.querySelector('[value="' + param + '"]');
 
   if (proposalItem) {
@@ -46,7 +46,7 @@ function setProposalItems(param) {
   }
 }
 
-urlParams.forEach(setProposalItems);
+urlParams.forEach(selectProposalItems);
 
 
 /******* FAQ *******/
