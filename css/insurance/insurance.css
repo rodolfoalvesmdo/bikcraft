@@ -41,14 +41,19 @@
   background-color: var(--c1);
 }
 
-.faq li h3 {
+.faq li button {
+  width: 100%;
   display: flex;
   margin-bottom: 16px;
+  align-items: center;
   justify-content: space-between;
   position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-.faq li h3::before {
+.faq li button::before {
   content: "";
   display: block;
   width: 12px;
@@ -56,25 +61,31 @@
   background-color: var(--p1);
   position: absolute;
   left: -20px;
-  top: 11px;
+  top: 14px;
 }
 
-.faq li h3 img {
+.faq li button img {
   object-fit: contain;
   transition: 0.2s;
 }
 
-.faq li h3 a:hover img {
+.faq li button:hover img,
+.faq li button[aria-expanded="true"] img {
   transform: rotate(180deg);
 }
 
-.faq li h3 a {
+.faq li button {
   padding: 6px 0 6px 8px;
 }
 
 .faq li p {
   max-width: 75ch;
   font-weight: 400;
+  display: none;
+}
+
+.faq li p.active-faq {
+  display: block;
 }
 
 @media (min-width: 801px) and (max-width: 1000px) {
