@@ -10,29 +10,21 @@ links.forEach(changeLinkColor);
 
 
 /******* Image Gallery *******/
-const images = document.querySelectorAll(".bike-images img");
-const imagemPrincipal = images[0];
+const bikesImg = document.querySelectorAll(".bike-images img");
+const imagesGallery = document.querySelector(".bike-images");
 
-function swapImage(event) {
-  const principalSrc = imagemPrincipal.getAttribute("src");
-  const clicadaSrc = event.currentTarget.getAttribute("src");
-
-  const principalAlt = imagemPrincipal.getAttribute("alt");
-  const clicadaAlt = event.currentTarget.getAttribute("alt");
-
-  if (principalSrc !== clicadaSrc) {
-    imagemPrincipal.setAttribute("src", clicadaSrc);
-    imagemPrincipal.setAttribute("alt", clicadaAlt);
-    event.currentTarget.setAttribute("src", principalSrc);
-    event.currentTarget.setAttribute("alt", principalAlt);
+function changeBikeImage(event) {
+  const img = event.currentTarget;
+  if(matchMedia("(min-width: 360px)").matches) {
+    imagesGallery.prepend(img);
   }
 }
 
-function clickEvent(image) {
-  image.addEventListener("click", swapImage);
+function galleryEvents(bikeImg) {
+  bikeImg.addEventListener("click", changeBikeImage);
 }
 
-images.forEach(clickEvent);
+bikesImg.forEach(galleryEvents);
 
 
 /******* Auto Select Proposal Items *******/
