@@ -6,7 +6,7 @@ Loja virtual desenvolvida como projeto de estudo para a Bikcraft, uma empresa fi
 
 ## :link: Links
 
-- <a href="https://rodolfooliveiram.github.io/bikcraft/" target="_blank">Acesse a página do projeto ao vivo</a>
+- [Acesse a página do projeto ao vivo](https://rodolfooliveiram.github.io/bikcraft/)
 
 ## :gear: Tech
 
@@ -16,4 +16,4 @@ Loja virtual desenvolvida como projeto de estudo para a Bikcraft, uma empresa fi
 
 ## 👨‍💻 Dev
 
-- <a href="https://www.linkedin.com/in/rodolfooliveiram/" target="_blank">linkedin.com/in/rodolfooliveiram</a>
+- [linkedin.com/in/rodolfooliveiram](https://www.linkedin.com/in/rodolfooliveiram/)
